@@ -8,6 +8,7 @@ public class Anfibio extends Animal {
         super(id, nome, especie, andarDesejado, peso, temperaturaIdeal);
     }  
 
+    //aaaaaaaaaaaaaaaaaaaaaaaaaa
     @Override
     public boolean equals(Object o) {
         if(o == null){
