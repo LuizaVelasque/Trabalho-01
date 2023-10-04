@@ -14,9 +14,10 @@ public class MamiferoAquatico extends Mamifero {
                 ", temperatura ideal = " + getTemperaturaIdeal() + ", é peludo = " + isPeludo();
     }
 
-    /*@Override
+    @Override
     public int hashCode(){
-    }*/
+        return Objects.hash(id, nome, especie, peso, andarDesejado, tempoDeEspera, temperaturaIdeal, peludo);
+    }
 
     @Override
     public boolean equals(Object o) {

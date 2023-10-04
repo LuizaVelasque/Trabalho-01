@@ -149,4 +149,9 @@ public class Animal {
             return false;
         }
     }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(id, nome, especie, peso, andarDesejado, tempoDeEspera, temperaturaIdeal);
+    }
 }

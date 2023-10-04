@@ -11,9 +11,10 @@ public class Peixe extends Animal {
         this.corDasEscamas = corDasEscamas;
     }
 
-    /*@Override
-    public int hashCode() {
-    }*/
+    @Override
+    public int hashCode(){
+        return Objects.hash(id, nome, especie, peso, andarDesejado, tempoDeEspera, temperaturaIdeal, corDasEscamas);
+    }
 
     @Override
     public boolean equals(Object o) {
