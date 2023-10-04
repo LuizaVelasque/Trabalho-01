@@ -1,7 +1,7 @@
 package entidades;
 
 public class MamiferoAquatico extends Mamifero {
-    public final int PACIENCIA_MAXIMA = 40;
+    //public final int PACIENCIA_MAXIMA = 40;
 
     public MamiferoAquatico(int id, String nome, String especie, int andarDesejado, int peso, int temperaturaIdeal, boolean peludo) {
         super(id, nome, especie, andarDesejado, peso, temperaturaIdeal, peludo);
@@ -40,6 +40,7 @@ public class MamiferoAquatico extends Mamifero {
         }
     }
 
-    /*public String nadar(){
-    }*/  
+    public String nadar(){
+        return "nadando";
+    } 
 }

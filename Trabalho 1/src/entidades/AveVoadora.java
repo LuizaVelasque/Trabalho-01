@@ -1,15 +1,16 @@
 package entidades;
 
 public class AveVoadora extends Ave {
-    public final int PACIENCIA_MAXIMA = 20;
+    //public final int PACIENCIA_MAXIMA = 20;
 
     public AveVoadora(int id, String nome, String especie, int andarDesejado, 
     int peso, int temperaturaIdeal, String corDasPenas){
         super(id, nome, especie, andarDesejado, peso, temperaturaIdeal, corDasPenas);
     }
 
-    /*public String voar(){
-    }*/
+    public String voar(){
+        return "voando";
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -1,14 +1,13 @@
 package entidades;
 
 public class Anfibio extends Animal {
-    public final int PACIENCIA_MAXIMA = 45;
+    //public final int PACIENCIA_MAXIMA = 45;
 
     public Anfibio(int id, String nome, String especie, int andarDesejado, 
     int peso, int temperaturaIdeal){
         super(id, nome, especie, andarDesejado, peso, temperaturaIdeal);
     }  
 
-    //aaaaaaaaaaaaaaaaaaaaaaaaaa
     @Override
     public boolean equals(Object o) {
         if(o == null){
@@ -31,9 +30,11 @@ public class Anfibio extends Animal {
         }
     }
 
-    /*public String andar(){
-    }*/
+    public String andar(){
+        return "andando";
+    }
 
-    /*public String nadar(){
-    }*/
+    public String nadar(){
+        return "nadando";
+    }
 }

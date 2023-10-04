@@ -1,15 +1,16 @@
 package entidades;
 
 public class ReptilAquatico extends Reptil {
-    public final int PACIENCIA_MAXIMA = 15;
+    //public final int PACIENCIA_MAXIMA = 15;
 
     public ReptilAquatico(int id, String nome, String especie, int andarDesejado, 
     int peso, int temperaturaIdeal){
         super(id, nome, especie, andarDesejado, peso, temperaturaIdeal);
     }
 
-    /*public String nadar(){
-    }*/ 
+    public String nadar(){
+        return "nadando";
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -1,7 +1,7 @@
 package entidades;
 
 public class Peixe extends Animal {
-    public final int PACIENCIA_MAXIMA = 60;
+    //public final int PACIENCIA_MAXIMA = 60;
 
     private String corDasEscamas;
 
@@ -48,6 +48,7 @@ public class Peixe extends Animal {
         return corDasEscamas;
     }
 
-    /*public String nadar(){
-    }*/
+    public String nadar(){
+        return "nadando";
+    }
 }

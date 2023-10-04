@@ -1,7 +1,7 @@
 package entidades;
 
 public class Ave extends Animal {
-    public final int PACIENCIA_MAXIMA = 30;
+    //public final int PACIENCIA_MAXIMA = 30;
     
     private String corDasPenas;
 
@@ -48,6 +48,7 @@ public class Ave extends Animal {
         return corDasPenas;
     }   
     
-    /*public String andar(){
-    }*/
+    public String andar(){
+        return "andando";
+    }
 }
