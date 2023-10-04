@@ -30,6 +30,7 @@ public class Elevador {
     public Elevador(){
         animais = new HashSet<Animal>();
         andar = 0;
+        temperaturaDoArCondicionado = 20;
         cheioDeAgua = false;
     }
 
