@@ -53,6 +53,11 @@ public class Animal {
         this.temperaturaIdeal = temperaturaIdeal;
     }
     
+    /**
+     * Retorna uma String que representa textualmente o animal.
+     * O método mostra todos os atributos do animal de maneira textual.
+     * @return atributos do animal 
+     */
     @Override
     public String toString() {
         return  "ID: " + this.id + ", nome = " + this.nome + ", especie = " + this.especie + ", peso = " + this.peso + 
@@ -60,22 +65,44 @@ public class Animal {
         this.temperaturaIdeal;
     }
 
+    /**
+     * Retorna o nome do animal.
+     * A string é escolhida a partir de uma lista pré-determinada.
+     * @return nome do animal
+     */
     public String getNome() {
         return nome;
     }
 
+    /**
+     * Retorna a espécie do animal.
+     * A string é montada a partir de combinações de strings pré-determinados.
+     * @return espécie do animal
+     */
     public String getEspecie() {
         return especie;
     }
 
+    /**
+     * Retorna o andar que o animal deseja se alocar.
+     * @return número inteiro que indica o andar que o animal quer descer
+     */
     public int getAndarDesejado() {
         return andarDesejado;
     }
 
+    /**
+     * Retorna o tempo que o animal está aguardando pelo elevador.
+     * @return número inteiro que indica o tempo de espera
+     */
     public int getTempoDeEspera() {
         return tempoDeEspera;
     }
 
+    /**
+     * Retorna a temperatura ideal do animal em graus Celsius.
+     * @return número inteiro que indica a temperatura ideal do animal
+     */
     public int getTemperaturaIdeal() {
         return temperaturaIdeal;
     }
@@ -128,6 +155,12 @@ public class Animal {
         return result;
     }*/
 
+    /**
+     * Indica se um animal é igual a outro animal.
+     * O método compara os conteúdos que estão dentro de dois animais e verifica se eles são iguais.
+     * @param o
+     * @return valor booleano verdadeiro ou falso 
+     */
     @Override
     public boolean equals(Object o) {
         if(o == null){
@@ -150,6 +183,11 @@ public class Animal {
         }
     }
 
+    /**
+     * Retorna um valor de código hash para o animal.  
+     * O método mostra todos os atributos do animal em formato numérico.
+     * @return número inteiro que representa o animal 
+     */
     @Override
     public int hashCode(){
         return Objects.hash(id, nome, especie, peso, andarDesejado, tempoDeEspera, temperaturaIdeal);
