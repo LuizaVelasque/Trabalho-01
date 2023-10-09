@@ -114,9 +114,6 @@ public class Animal {
     /*public void aumentaEspera(){
     }*/
 
-    /*public void resetaTempoDeEspera(){
-    }*/
-
     /*@Override
     public int hashCode() {
         final int prime = 31;
