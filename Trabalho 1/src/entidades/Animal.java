@@ -156,10 +156,10 @@ public class Animal {
     }*/
 
     /**
-     * Indica se um animal é igual a outro animal.
-     * O método compara os conteúdos que estão dentro de dois animais e verifica se eles são iguais.
+     * Indica se um objeto é igual a outro objeto.
+     * O método compara os conteúdos que estão dentro de dois objetos e verifica se eles são iguais.
      * @param o
-     * @return valor booleano verdadeiro ou falso 
+     * @return true ou false 
      */
     @Override
     public boolean equals(Object o) {
