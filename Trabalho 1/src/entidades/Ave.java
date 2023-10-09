@@ -60,10 +60,10 @@ public class Ave extends Animal {
             return false;
         }
         Ave outraAve = (Ave)o;
-        if(getId() == outraAve.getId() && getNome() == outraAve.getNome() &&
-        getEspecie() == outraAve.getEspecie() && getPeso() == outraAve.getPeso() &&
-        getAndarDesejado() == outraAve.getAndarDesejado() && getTempoDeEspera() == outraAve.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outraAve.getTemperaturaIdeal() && this.corDasPenas == outraAve.corDasPenas){
+        if((getId() == outraAve.getId()) && (getNome().equals(outraAve.getNome())) &&
+        (getEspecie().equals(outraAve.getEspecie())) && (getPeso() == outraAve.getPeso()) &&
+        (getAndarDesejado() == outraAve.getAndarDesejado()) && (getTempoDeEspera() == outraAve.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outraAve.getTemperaturaIdeal()) && (this.corDasPenas.equals(outraAve.corDasPenas))){
             return true;
         } else {
             return false;

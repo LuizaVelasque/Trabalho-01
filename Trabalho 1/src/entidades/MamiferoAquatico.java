@@ -66,10 +66,10 @@ public class MamiferoAquatico extends Mamifero {
             return false;
         }
         MamiferoAquatico outroMamiferoAquatico = (MamiferoAquatico)o;
-        if(getId() == outroMamiferoAquatico.getId() && getNome() == outroMamiferoAquatico.getNome() &&
-        getEspecie() == outroMamiferoAquatico.getEspecie() && getPeso() == outroMamiferoAquatico.getPeso() &&
-        getAndarDesejado() == outroMamiferoAquatico.getAndarDesejado() && getTempoDeEspera() == outroMamiferoAquatico.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroMamiferoAquatico.getTemperaturaIdeal() && isPeludo() == outroMamiferoAquatico.isPeludo()){
+        if((getId() == outroMamiferoAquatico.getId()) && (getNome().equals(outroMamiferoAquatico.getNome())) &&
+        (getEspecie().equals(outroMamiferoAquatico.getEspecie())) && (getPeso() == outroMamiferoAquatico.getPeso()) &&
+        (getAndarDesejado() == outroMamiferoAquatico.getAndarDesejado()) && (getTempoDeEspera() == outroMamiferoAquatico.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroMamiferoAquatico.getTemperaturaIdeal()) && (isPeludo() == outroMamiferoAquatico.isPeludo())){
             return true;
         } else {
             return false;

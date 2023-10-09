@@ -55,10 +55,10 @@ public class Reptil extends Animal {
             return false;
         }
         Reptil outroReptil = (Reptil)o;
-        if(getId() == outroReptil.getId() && getNome() == outroReptil.getNome() &&
-        getEspecie() == outroReptil.getEspecie() && getPeso() == outroReptil.getPeso() &&
-        getAndarDesejado() == outroReptil.getAndarDesejado() && getTempoDeEspera() == outroReptil.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroReptil.getTemperaturaIdeal()){
+        if((getId() == outroReptil.getId()) && (getNome().equals(outroReptil.getNome())) &&
+        (getEspecie().equals(outroReptil.getEspecie())) && (getPeso() == outroReptil.getPeso()) &&
+        (getAndarDesejado() == outroReptil.getAndarDesejado()) && (getTempoDeEspera() == outroReptil.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroReptil.getTemperaturaIdeal())){
             return true;
         } else {
             return false;

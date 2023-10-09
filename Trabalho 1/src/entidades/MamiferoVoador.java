@@ -66,10 +66,10 @@ public class MamiferoVoador extends Mamifero{
             return false;
         }
         MamiferoVoador outroMamiferoVoador = (MamiferoVoador)o;
-        if(getId() == outroMamiferoVoador.getId() && getNome() == outroMamiferoVoador.getNome() &&
-        getEspecie() == outroMamiferoVoador.getEspecie() && getPeso() == outroMamiferoVoador.getPeso() &&
-        getAndarDesejado() == outroMamiferoVoador.getAndarDesejado() && getTempoDeEspera() == outroMamiferoVoador.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroMamiferoVoador.getTemperaturaIdeal() && isPeludo() == outroMamiferoVoador.isPeludo()){
+        if((getId() == outroMamiferoVoador.getId()) && (getNome().equals(outroMamiferoVoador.getNome())) &&
+        (getEspecie().equals(outroMamiferoVoador.getEspecie())) && (getPeso() == outroMamiferoVoador.getPeso()) &&
+        (getAndarDesejado() == outroMamiferoVoador.getAndarDesejado()) && (getTempoDeEspera() == outroMamiferoVoador.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroMamiferoVoador.getTemperaturaIdeal()) && (isPeludo() == outroMamiferoVoador.isPeludo())){
             return true;
         } else {
             return false;

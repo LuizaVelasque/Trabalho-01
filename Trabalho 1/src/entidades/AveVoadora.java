@@ -54,10 +54,10 @@ public class AveVoadora extends Ave {
             return false;
         }
         AveVoadora outraAveVoadora = (AveVoadora)o;
-        if(getId() == outraAveVoadora.getId() && getNome() == outraAveVoadora.getNome() &&
-        getEspecie() == outraAveVoadora.getEspecie() && getPeso() == outraAveVoadora.getPeso() &&
-        getAndarDesejado() == outraAveVoadora.getAndarDesejado() && getTempoDeEspera() == outraAveVoadora.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outraAveVoadora.getTemperaturaIdeal() && getCorDasPenas() == outraAveVoadora.getCorDasPenas()){
+        if((getId() == outraAveVoadora.getId()) && (getNome().equals(outraAveVoadora.getNome())) &&
+        (getEspecie().equals(outraAveVoadora.getEspecie())) && (getPeso() == outraAveVoadora.getPeso()) &&
+        (getAndarDesejado() == outraAveVoadora.getAndarDesejado()) && (getTempoDeEspera() == outraAveVoadora.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outraAveVoadora.getTemperaturaIdeal()) && (getCorDasPenas().equals(outraAveVoadora.getCorDasPenas()))){
             return true;
         } else {
             return false;

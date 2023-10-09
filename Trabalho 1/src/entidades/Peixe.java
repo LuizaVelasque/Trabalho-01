@@ -58,10 +58,10 @@ public class Peixe extends Animal {
             return false;
         }
         Peixe outroPeixe = (Peixe)o;
-        if(getId() == outroPeixe.getId() && getNome() == outroPeixe.getNome() &&
-        getEspecie() == outroPeixe.getEspecie() && getPeso() == outroPeixe.getPeso() &&
-        getAndarDesejado() == outroPeixe.getAndarDesejado() && getTempoDeEspera() == outroPeixe.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroPeixe.getTemperaturaIdeal() && this.corDasEscamas == outroPeixe.corDasEscamas){
+        if((getId() == outroPeixe.getId()) && (getNome().equals(outroPeixe.getNome())) &&
+        (getEspecie().equals(outroPeixe.getEspecie())) && (getPeso() == outroPeixe.getPeso()) &&
+        (getAndarDesejado() == outroPeixe.getAndarDesejado()) && (getTempoDeEspera() == outroPeixe.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroPeixe.getTemperaturaIdeal()) && (this.corDasEscamas.equals(outroPeixe.corDasEscamas))){
             return true;
         } else {
             return false;

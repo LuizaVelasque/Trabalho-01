@@ -53,10 +53,10 @@ public class ReptilAquatico extends Reptil {
             return false;
         }
         ReptilAquatico outroReptilAquatico = (ReptilAquatico)o;
-        if(getId() == outroReptilAquatico.getId() && getNome() == outroReptilAquatico.getNome() &&
-        getEspecie() == outroReptilAquatico.getEspecie() && getPeso() == outroReptilAquatico.getPeso() &&
-        getAndarDesejado() == outroReptilAquatico.getAndarDesejado() && getTempoDeEspera() == outroReptilAquatico.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroReptilAquatico.getTemperaturaIdeal()){
+        if((getId() == outroReptilAquatico.getId()) && (getNome().equals(outroReptilAquatico.getNome())) &&
+        (getEspecie().equals(outroReptilAquatico.getEspecie())) && (getPeso() == outroReptilAquatico.getPeso()) &&
+        (getAndarDesejado() == outroReptilAquatico.getAndarDesejado()) && (getTempoDeEspera() == outroReptilAquatico.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroReptilAquatico.getTemperaturaIdeal())){
             return true;
         } else {
             return false;

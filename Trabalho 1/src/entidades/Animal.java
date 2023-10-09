@@ -141,20 +141,6 @@ public class Animal {
     /*public void aumentaEspera(){
     }*/
 
-    /*@Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + id;
-        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-        result = prime * result + ((especie == null) ? 0 : especie.hashCode());
-        result = prime * result + peso;
-        result = prime * result + andarDesejado;
-        result = prime * result + tempoDeEspera;
-        result = prime * result + temperaturaIdeal;
-        return result;
-    }*/
-
     /**
      * Indica se um objeto é igual a outro objeto.
      * O método compara os conteúdos que estão dentro de dois objetos e verifica se eles são iguais.
@@ -173,10 +159,10 @@ public class Animal {
             return false;
         }
         Animal outroAnimal = (Animal)o;
-        if(this.id == outroAnimal.id && this.nome == outroAnimal.nome &&
-        this.especie == outroAnimal.especie && this.peso == outroAnimal.peso &&
-        this.andarDesejado == outroAnimal.andarDesejado && this.tempoDeEspera == outroAnimal.tempoDeEspera &&
-        this.temperaturaIdeal == outroAnimal.temperaturaIdeal){
+        if((this.id == outroAnimal.id) && (this.nome.equals(outroAnimal.nome)) &&
+        (this.especie.equals(outroAnimal.especie)) && (this.peso == outroAnimal.peso) &&
+        (this.andarDesejado == outroAnimal.andarDesejado) && (this.tempoDeEspera == outroAnimal.tempoDeEspera) &&
+        (this.temperaturaIdeal == outroAnimal.temperaturaIdeal)){
             return true;
         } else {
             return false;

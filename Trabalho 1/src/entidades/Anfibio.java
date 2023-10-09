@@ -44,10 +44,10 @@ public class Anfibio extends Animal {
             return false;
         }
         Anfibio outroAnfibio = (Anfibio)o;
-        if(getId() == outroAnfibio.getId() && getNome() == outroAnfibio.getNome() &&
-        getEspecie() == outroAnfibio.getEspecie() && getPeso() == outroAnfibio.getPeso() &&
-        getAndarDesejado() == outroAnfibio.getAndarDesejado() && getTempoDeEspera() == outroAnfibio.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroAnfibio.getTemperaturaIdeal()){
+        if((getId() == outroAnfibio.getId()) && (getNome().equals(outroAnfibio.getNome())) &&
+        (getEspecie().equals(outroAnfibio.getEspecie())) && (getPeso() == outroAnfibio.getPeso()) &&
+        (getAndarDesejado() == outroAnfibio.getAndarDesejado()) && (getTempoDeEspera() == outroAnfibio.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroAnfibio.getTemperaturaIdeal())){
             return true;
         } else {
             return false;

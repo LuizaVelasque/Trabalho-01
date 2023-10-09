@@ -66,10 +66,10 @@ public class MamiferoTerrestre extends Mamifero {
             return false;
         }
         MamiferoTerrestre outroMamiferoTerrestre = (MamiferoTerrestre)o;
-        if(getId() == outroMamiferoTerrestre.getId() && getNome() == outroMamiferoTerrestre.getNome() &&
-        getEspecie() == outroMamiferoTerrestre.getEspecie() && getPeso() == outroMamiferoTerrestre.getPeso() &&
-        getAndarDesejado() == outroMamiferoTerrestre.getAndarDesejado() && getTempoDeEspera() == outroMamiferoTerrestre.getTempoDeEspera() &&
-        getTemperaturaIdeal() == outroMamiferoTerrestre.getTemperaturaIdeal() && isPeludo() == outroMamiferoTerrestre.isPeludo()){
+        if((getId() == outroMamiferoTerrestre.getId()) && (getNome().equals(outroMamiferoTerrestre.getNome())) &&
+        (getEspecie().equals(outroMamiferoTerrestre.getEspecie())) && (getPeso() == outroMamiferoTerrestre.getPeso()) &&
+        (getAndarDesejado() == outroMamiferoTerrestre.getAndarDesejado()) && (getTempoDeEspera() == outroMamiferoTerrestre.getTempoDeEspera()) &&
+        (getTemperaturaIdeal() == outroMamiferoTerrestre.getTemperaturaIdeal()) && (isPeludo() == outroMamiferoTerrestre.isPeludo())){
             return true;
         } else {
             return false;
