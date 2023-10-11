@@ -40,8 +40,7 @@ public class Ascensorista {
      * @param elevador o elevador controlado pelo ascensorista
      * @param andar o andar no qual o elevador está parado
      */
-    public void agir(Elevador elevador, Andar andar){
-        /* TODO: codificar */
-    }
+    /*public void agir(Elevador elevador, Andar andar, Animal animal){
+    }*/
     
 }
