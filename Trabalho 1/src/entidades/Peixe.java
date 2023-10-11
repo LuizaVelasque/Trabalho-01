@@ -37,7 +37,7 @@ public class Peixe extends Animal {
      */
     @Override
     public int hashCode(){
-        return Objects.hash(id, nome, especie, peso, andarDesejado, tempoDeEspera, temperaturaIdeal, corDasEscamas);
+        return Objects.hash(getId(), getNome(), getEspecie(), getPeso(), getAndarDesejado(), getTempoDeEspera(), getTemperaturaIdeal(), corDasEscamas);
     }
 
     /**
