@@ -8,7 +8,7 @@ package entidades;
  * @version 1.0
  */
 public class AveVoadora extends Ave {
-    //public final int PACIENCIA_MAXIMA = 20;
+    public final int PACIENCIA_MAXIMA = 20;
 
     /**
      * Construtor da ave voadora.

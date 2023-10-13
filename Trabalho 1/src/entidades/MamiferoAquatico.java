@@ -8,7 +8,7 @@ package entidades;
  * @version 1.0
  */
 public class MamiferoAquatico extends Mamifero {
-    //public final int PACIENCIA_MAXIMA = 40;
+    public final int PACIENCIA_MAXIMA = 40;
 
     /**
      * Construtor de mamífero aquático.

@@ -8,7 +8,7 @@ package entidades;
  * @version 1.0
  */
 public class Peixe extends Animal {
-    //public final int PACIENCIA_MAXIMA = 60;
+    public final int PACIENCIA_MAXIMA = 60;
 
     private String corDasEscamas;
 

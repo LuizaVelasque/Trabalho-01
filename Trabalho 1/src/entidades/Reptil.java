@@ -10,7 +10,7 @@ package entidades;
  * @version 1.0
  */
 public class Reptil extends Animal {
-    //public final int PACIENCIA_MAXIMA = 10;
+    public final int PACIENCIA_MAXIMA = 10;
 
     /**
      * Construtor de reptil.

@@ -8,7 +8,7 @@ package entidades;
  * @version 1.0
  */
 public class Anfibio extends Animal {
-    //public final int PACIENCIA_MAXIMA = 45;
+    public final int PACIENCIA_MAXIMA = 45;
 
     /**
      * Construtor do anfíbio.

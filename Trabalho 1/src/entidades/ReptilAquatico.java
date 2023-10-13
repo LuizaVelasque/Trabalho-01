@@ -8,7 +8,7 @@ package entidades;
  * @version 1.0
  */
 public class ReptilAquatico extends Reptil {
-    //public final int PACIENCIA_MAXIMA = 15;
+    public final int PACIENCIA_MAXIMA = 15;
 
     /**
      * Construtor de reptil aquático. 

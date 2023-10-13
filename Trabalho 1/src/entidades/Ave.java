@@ -10,7 +10,7 @@ package entidades;
  * @version 1.0
  */
 public class Ave extends Animal {
-    //public final int PACIENCIA_MAXIMA = 30;
+    public final int PACIENCIA_MAXIMA = 30;
     
     private String corDasPenas;
 

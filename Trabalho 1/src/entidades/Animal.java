@@ -22,7 +22,7 @@ public class Animal {
     /**
      * Limite da paciência de um animal esperando na fila antes de ir embora.
      */
-    //public final int PACIENCIA_MAXIMA = 25; //em segundos (ciclos de espera)
+    public final int PACIENCIA_MAXIMA = 25; //em segundos (ciclos de espera)
     
     private int id;
     private String nome;
