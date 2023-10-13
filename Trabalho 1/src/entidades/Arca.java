@@ -1,17 +1,17 @@
 package entidades;
-import estudantes.entidades.Anfibio;
-import estudantes.entidades.Animal;
-import estudantes.entidades.Ascensorista;
-import estudantes.entidades.Ave;
-import estudantes.entidades.AveVoadora;
-import estudantes.entidades.MamiferoAquatico;
-import estudantes.entidades.MamiferoTerrestre;
-import estudantes.entidades.MamiferoVoador;
-import estudantes.entidades.Peixe;
-import estudantes.entidades.Reptil;
-import estudantes.entidades.ReptilAquatico;
+import entidades.Anfibio;
+import entidades.Animal;
+import entidades.Ascensorista;
+import entidades.Ave;
+import entidades.AveVoadora;
+import entidades.MamiferoAquatico;
+import entidades.MamiferoTerrestre;
+import entidades.MamiferoVoador;
+import entidades.Peixe;
+import entidades.Reptil;
+import entidades.ReptilAquatico;
 import java.util.Random;
-import professor.gui.Simulador;
+import gui.Simulador;
 
 /**
  * Classe que representa a arca com seus andares, elevador e ascensorista.
