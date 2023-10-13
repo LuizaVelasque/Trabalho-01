@@ -138,8 +138,12 @@ public class Animal {
      * @throws RuntimeException se o animal está esperando a mais tempo que a paciência
      * @see professor.entidades.Arca#simularVida
      */
-    /*public void aumentaEspera(){
-    }*/
+    public void aumentaEspera(){
+        tempoDeEspera++;
+        if(tempoDeEspera > PACIENCIA_MAXIMA){
+            throw new RuntimeException("O animal foi embora porque a sua paciência acabou.");
+        }
+    }
 
     /**
      * Indica se um objeto é igual a outro objeto.
