@@ -25,7 +25,7 @@ public class Elevador {
     
     /**
      * Construtor padrão do elevador.
-     * Ele sempre começa vazio, sem água dentro e no andar 0 (térreo).
+     * Ele sempre começa vazio, sem água dentro, com a temperatura do ar condicionado em 20 graus Celsius e no andar 0 (térreo).
      */
     public Elevador(){
         animais = new HashSet<Animal>();

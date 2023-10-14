@@ -37,6 +37,10 @@ public class Ascensorista {
      * elevador usando os métodos "desembarcar" e "embarcar" por exemplo.
      * O estado do elevador também é importante para acionar os comandos do 
      * elevador como "drenar", "encher", "subir" e "descer".
+     * <br><br>
+     * <strong> Os métodos "subir" e "descer" só podem ser chamados uma vez por 
+     * execução do método! </strong>
+     * 
      * @param elevador o elevador controlado pelo ascensorista
      * @param andar o andar no qual o elevador está parado
      */
