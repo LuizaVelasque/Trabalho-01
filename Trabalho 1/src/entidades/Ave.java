@@ -1,5 +1,7 @@
 package entidades;
 
+import java.util.Objects;
+
 /**
  * Subclasse de Animal
  * <br><br>

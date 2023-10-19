@@ -12,9 +12,10 @@ import java.util.LinkedList;
  * @version 1.0
  */
 public class Andar {
-    private int andar; //começa no 0
-    private LinkedList<Animal> filaParaElevador;
-    private HashSet<Animal> animaisQueDesceram;
+    
+    public int andar; //começa no 0
+    public LinkedList<Animal> filaParaElevador;
+    public HashSet<Animal> animaisQueDesceram;
     
     /**
      * Construtor do andar.

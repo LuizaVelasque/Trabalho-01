@@ -44,7 +44,98 @@ public class Ascensorista {
      * @param elevador o elevador controlado pelo ascensorista
      * @param andar o andar no qual o elevador está parado
      */
-    /*public void agir(Elevador elevador, Andar andar, Animal animal){
-    }*/
-    
+    public void agir(Elevador elevador, Andar andar) {
+        Animal[] filaPorAndar = andar.checarFilaParaElevador();
+        Animal[] animaisNoElevador = elevador.checarAnimaisNoElevador();
+        Animal proximoDaFila = andar.chamarProximoDaFila();
+        int pesoNoElevador = 0;
+        boolean limiteDePesoAtingido = false;
+        for (Animal animal : animaisNoElevador) {
+            pesoNoElevador = pesoNoElevador +  animal.getPeso();
+        }
+        boolean animaisAquaticosNoElevador = false; 
+        boolean animaisTerrestresNoElevador = false; 
+        boolean animaisAnfibiosNoElevador = false; 
+
+        for (Animal animal : animaisNoElevador) {
+            if (animal instanceof Peixe || animal instanceof MamiferoAquatico) {
+                animaisAquaticosNoElevador = true;
+                break;
+            } else if (animal instanceof Anfibio || animal instanceof ReptilAquatico) {
+                animaisAnfibiosNoElevador = true;
+            } else {
+                animaisTerrestresNoElevador = true;
+            }
+        }
+        if (elevador.isCheioDeAgua() && !animaisAquaticosNoElevador) {
+            elevador.drenar();
+        }
+        for (Animal animal : animaisNoElevador) {
+            if (animal.getAndarDesejado() == elevador.getAndar()) {
+                elevador.desembarcar(animal, andar);
+            }
+        }
+        for (Animal animal : filaPorAndar) {
+            if (pesoNoElevador + animal.getPeso() <= elevador.LIMITE_DE_PESO) {
+                if (Math.abs(elevador.getTemperaturaDoArCondicionado() - animal.getTemperaturaIdeal()) <= 15) {
+                    if ((animal instanceof Peixe || animal instanceof MamiferoAquatico || animal instanceof ReptilAquatico ||
+                            animal instanceof Anfibio) && !animaisTerrestresNoElevador) {
+                        elevador.encher();
+                        elevador.embarcar(animal);
+                        andar.tirarDaFila(animal);
+                        pesoNoElevador += animal.getPeso();
+                    } else if ((animal instanceof MamiferoTerrestre || animal instanceof MamiferoVoador || animal instanceof Ave ||
+                            animal instanceof Reptil || animal instanceof Anfibio) && !animaisAquaticosNoElevador) {
+                        elevador.drenar();
+                        elevador.embarcar(animal);
+                        andar.tirarDaFila(animal);
+                        pesoNoElevador += animal.getPeso();
+                    }
+                }
+            } else {
+                limiteDePesoAtingido = true;
+                break; 
+            }
+        }
+        if (!limiteDePesoAtingido) {
+            mudarPosicaoDoElevador(elevador, andar);
+        }
+    }
+
+    /**
+     * Método responsável pela mudança da posição do elevador de acordo com o 
+     * andar desejado dos animais no elevador e dos animais na fila do andar.
+     * <br><br>
+     * O método verifica o próximo andar de destino para o elevador com base na localização atual 
+     * do elevador, na fila de animais esperando no andar e nos animais dentro do elevador. 
+     * O elevador será movido para o andar desejado do animal no elevadorque está mais 
+     * próximo do andar atual.
+     * @param elevador o elevador controlado pelo ascensorista
+     * @param andar o andar no qual o elevador está parado
+     */
+    private void mudarPosicaoDoElevador(Elevador elevador, Andar andar) {
+        int andarAtual = elevador.getAndar();
+        int proximoAndar = -1; 
+        Animal[] filaPorAndar = andar.checarFilaParaElevador();
+        Animal[] animaisNoElevador = elevador.checarAnimaisNoElevador();
+        if (filaPorAndar.length > 0) {
+            proximoAndar = andarAtual; 
+        } else {
+            int menorDiferenca = Integer.MAX_VALUE;
+            for (Animal animal : animaisNoElevador) {
+                int diferenca = Math.abs(animal.getAndarDesejado() - andarAtual);
+                if (diferenca < menorDiferenca) {
+                    menorDiferenca = diferenca;
+                    proximoAndar = animal.getAndarDesejado();
+                }
+            }
+        }
+        if (proximoAndar != -1) {
+            if (proximoAndar > andarAtual) {
+                elevador.subir();
+            } else if (proximoAndar < andarAtual) {
+                elevador.descer();
+            }
+        }
+    }
 }

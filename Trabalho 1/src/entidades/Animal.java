@@ -1,5 +1,7 @@
 package entidades;
 
+import java.util.Objects;
+
 /**
  * Classe que define um animal da arca.
  * <br><br>
